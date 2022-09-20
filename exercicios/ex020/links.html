@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: coral;
+        }
+
+        a:visited{
+            color: darkslateblue;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: aqua;
+        }
+
+        a::after{
+            content: ' [link]';
+            color: lightgray;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UC4xiDO9nr02ngOaJTlBKAFg" target="_blank">Canal do Youtube</a></li>
+        <li><a href="linkedin.com/in/leticiafeliciorocha" target="_blank">Linkedin</a></li>
+    </ul>
+</body>
+</html>
